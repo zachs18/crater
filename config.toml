@@ -159,6 +159,19 @@ crt0stack = { skip-tests = true } # UB
 fsdr-blocks = { skip = true } # does not build on beta
 leptos_core = { skip = true } # does not build on beta
 rustc_get_version = { skip = true } # does not build on beta
+async-retry = { skip-tests = true } # flaky tests (timing)
+dust_dds = { skip-tests = true } # flaky tests (timing)
+ratelimit = { skip-tests = true } # flaky tests (timing)
+shared-resource-pool-builder = { skip-tests = true } # flaky tests (timing)
+simple-clock = { skip-tests = true } # flaky tests (timing)
+slow_function_warning = { skip-tests = true } # flaky tests (timing)
+stringsort = { skip-tests = true } # flaky tests (timing)
+tokio-context = { skip-tests = true } # flaky tests (timing)
+fuel-streams-nats = { skip-tests = true } # flaky tests (setting env vars in multiple tests that run in parallel)
+should-color = { skip-tests = true } # flaky tests (setting env vars in multiple tests that run in parallel)
+axsys-noun = { skip-tests = true } # flaky test (HashMap iteration)
+serde-command-opts = { skip-tests = true } # flaky test (HashMap iteration)
+rs-tool = { skip-tests = true } # flaky test (randomness)
 
 [github-repos]
 # "org_name/repo_name" = { option = true }
